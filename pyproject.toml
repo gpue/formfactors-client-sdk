@@ -16,8 +16,8 @@ dependencies = [
 
 [project.optional-dependencies]
 nats = ["nats-py>=2.0"]
-novaflow = ["novaflow-client-sdk @ git+https://github.com/gpue/novaflow-client-sdk.git@v1.2.0"]
-all = ["nats-py>=2.0", "novaflow-client-sdk @ git+https://github.com/gpue/novaflow-client-sdk.git@v1.2.0"]
+novaflow = ["novaflow-client-sdk @ git+https://github.com/gpue/novaflow-client-sdk.git@v1.3.0"]
+all = ["nats-py>=2.0", "novaflow-client-sdk @ git+https://github.com/gpue/novaflow-client-sdk.git@v1.3.0"]
 dev = ["pytest>=7.0", "ruff>=0.4"]
 
 [tool.hatch.build.targets.wheel]
