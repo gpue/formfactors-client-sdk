@@ -1,5 +1,6 @@
 """NovaFlow integration — pre-built Action nodes for mobile robots and vision."""
 
+from .arm import NovaScript, nova_script
 from .mobile import (
     Dock,
     EStop,
@@ -24,6 +25,7 @@ __all__ = [
     "ExecuteStandardAction",
     "ImageLabelMatch",
     "MobileRobot",
+    "NovaScript",
     "SetRobotMode",
     "Stop",
     "Strafe",
@@ -31,4 +33,5 @@ __all__ = [
     "Undock",
     "Walk",
     "WalkToWaypoint",
+    "nova_script",
 ]
