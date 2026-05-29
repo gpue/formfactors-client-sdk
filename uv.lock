@@ -72,8 +72,8 @@ requires-dist = [
     { name = "httpx", specifier = ">=0.24" },
     { name = "nats-py", marker = "extra == 'all'", specifier = ">=2.0" },
     { name = "nats-py", marker = "extra == 'nats'", specifier = ">=2.0" },
-    { name = "novaflow-client-sdk", marker = "extra == 'all'", git = "https://github.com/gpue/novaflow-client-sdk.git?rev=v1.2.0" },
-    { name = "novaflow-client-sdk", marker = "extra == 'novaflow'", git = "https://github.com/gpue/novaflow-client-sdk.git?rev=v1.2.0" },
+    { name = "novaflow-client-sdk", marker = "extra == 'all'", git = "https://github.com/gpue/novaflow-client-sdk.git?rev=v1.3.0" },
+    { name = "novaflow-client-sdk", marker = "extra == 'novaflow'", git = "https://github.com/gpue/novaflow-client-sdk.git?rev=v1.3.0" },
     { name = "pydantic", specifier = ">=2.0" },
     { name = "pytest", marker = "extra == 'dev'", specifier = ">=7.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = ">=0.4" },
@@ -147,7 +147,7 @@ wheels = [
 [[package]]
 name = "novaflow-client-sdk"
 version = "0.1.0"
-source = { git = "https://github.com/gpue/novaflow-client-sdk.git?rev=v1.2.0#46b7e537f4109e655f445dcec99c78dbc0a39b14" }
+source = { git = "https://github.com/gpue/novaflow-client-sdk.git?rev=v1.3.0#bf1b8b4971e655eb2acc616b4d04b634c660db0d" }
 dependencies = [
     { name = "httpx" },
 ]

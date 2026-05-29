@@ -23,6 +23,7 @@ Usage:
 from __future__ import annotations
 
 import inspect
+import json
 import textwrap
 from typing import Any
 
@@ -46,9 +47,9 @@ class NovaScript(Action):
         data = {
             "code": value(code),
             "function_name": value(function_name),
-            "motion_group": value(motion_group),
-            "tcp": value(tcp),
-            "params": value(params or {}),
+            "motion_group": value(motion_group or ""),
+            "tcp": value(tcp or ""),
+            "params_json": value(json.dumps(params) if params else "{}"),
         }
         metadata = kwargs.pop("metadata", {})
         metadata.setdefault("name", kwargs.pop("name", function_name))
